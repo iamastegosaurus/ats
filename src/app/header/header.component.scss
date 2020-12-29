@@ -1,0 +1,33 @@
+.header {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.titlebar {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 20px;
+}
+
+.ats-logo {
+  height: 200px;
+  grid-column: 1/2;
+  margin-left: 10%;
+}
+
+.contact {
+  text-align: right;
+  margin-right: 10%;
+  color: green;
+  font-weight: bold;
+}
+
+.services .motto {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.services .bonded {
+  font-style: italic;
+}

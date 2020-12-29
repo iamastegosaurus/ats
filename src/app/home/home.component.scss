@@ -1,0 +1,73 @@
+.home {
+  font-size: 22px;
+  text-align: center;
+}
+
+.imageContainer {
+  padding-bottom: 20px;
+}
+
+.aboutContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  padding-top: 30px;
+
+  .info {
+    grid-column: 1/2;
+  }
+  .radius {
+    grid-column: 2/3;
+  }
+}
+
+.servicesContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 300px 300px 300px;
+  // padding: 30px;
+
+  p {
+    font-size: 18px;
+  }
+
+  a {
+    font-size: 24px;
+  }
+
+  .tree-removal {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .tree-removal-img {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 300px;
+    width: auto;
+  }
+
+  .tree-trimming {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .tree-trimming-img {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    height: 300px;
+    width: auto;
+  }
+
+  .snow-removal {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .snow-removal-img {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    height: 300px;
+    width: auto;
+  }
+}
