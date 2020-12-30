@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EmailValidator, NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
+
 import './smtp.js';
 
 declare let Email: any;
@@ -36,12 +37,10 @@ export class QuoteFormComponent {
     const body = '<html>' + formattedAddress + formattedName + formattedContact + '"' + message + '"' + '<html>';
 
     Email.send({
-      Host : 'smtp.gmail.com',
-      Username : 'thespahrtan@gmail.com',
-      Password : 'gptilepqjytlygqg',
-      To : 'mspencer@live.com',
-      From : 'ats-notify@gmail.com',
-      Subject : 'test ats-notify: ' + serviceType + ' requested',
+      SecureToken: 'de42f606-f4ee-4eee-bd61-fddc4f10e025',
+      To : 'sean.ats@outlook.com',
+      From : 'ats.notify@gmail.com',
+      Subject : 'ats-notify: ' + serviceType + ' requested',
       Body : body
       });
     console.log('submitted');
